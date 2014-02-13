@@ -81,11 +81,27 @@
 				console.log("Drink",i+1,currentDrink);
 		
 				if(currentDrink.color == 'black',currentDrink.caffeine == true){
-					console.log("This is coffee.");// testing to see if the comp knows it's coffee
+					console.log("This is coffee.");//testing to see if the comp knows it's coffee
+					blackCaffeine.push(currentDrink);
 				}else{
-					console.log("Not coffee.");
-				}
-			}
+					console.log("Not coffee.");//testing to see if the comp knows it's not coffee
+					otherDrinks.push(currentDrink);
+				}//end if
+			}//end for
+			
+			/*
+			 * Seventh, I'm going to find out if the computer has properly sorted my drinks!
+			 */
+			console.log(" ");//just some space for aesthetics
+			console.log("The mystery drink is",blackCaffeine);
+			console.log("The other drinks are",otherDrinks);
+			console.log(" ");//space
+			
+			/*
+			 * Eighth, I'm going to check to see if the computer still knows about my original drink lists.
+			 */
+			console.log("The black drinks are still",blackDrinks);
+			console.log("The colorful drinks are still",colorDrinks);
 		</script>
 	</body>
 </html>
