@@ -10,8 +10,8 @@
 		<div>This javascript project will sort drinks. Rick-click, Inspect element, and Console to check it.</div>
 		<script>
 		/*
-		 * First, I'm going to make a list of four drinks. Each drink will have
-		 *  three attributes: name, caffeine (boollean), and color.
+		 * 1.) I'm going to make a list of four drinks. Each drink will have
+		 * three attributes: name, caffeine (boollean), and color.
 		 */
 			var drinkList = [
 				{"name":"root beer",
@@ -32,18 +32,18 @@
 			];
 			
 			/*
-			 * Second, I'm going to create two empty lists, one called blackDrinks
+			 *2.) I'm going to create two empty lists, one called blackDrinks
 			 * and one called colorDrinks.
 			 */
 			var blackDrinks = [];
 			var colorDrinks = [];
 			
 			/*
-			 * Third, I'm going to create a for loop. It will check each drink in the drinkList
+			 * 3.) I'm going to create a for loop. It will check each drink in the drinkList
 			 * to see if it's black. If it is, it'll put it into blackDrinks. Otherwise, it'll
 			 * put it into colorDrinks.
 			 */
-			for(var i=0;i<4;i++){
+			for(var i=0;i<drinkList.length;i++){
 				var currentDrink = drinkList[i];
 				console.log("Drink",i+1,drinkList[i]);//listing the drinks
 				
@@ -57,14 +57,15 @@
 			}//end for
 			
 			/*
-			 * Fourth, I'll console log blackDrinks and colorDrinks to see if it sorted properly.
+			 * 4.) I'll console log blackDrinks and colorDrinks to see if it sorted properly.
 			 */
 			console.log(" ");//space to see better in browser console.
 			console.log("The black drinks are",blackDrinks);
 			console.log("The colorful drinks are",colorDrinks);
 			console.log(" ");//space to see better in browser console.
+			
 			/*
-			 * Fifth, I want to see if I can single out only the drink that is black and has caffeine.
+			 * 5.) I want to see if I can single out only the drink that is black and has caffeine.
 			 * To do this, I'm going to make two more empty lists, one called blackCaffeine, the other
 			 * called otherDrinks.
 			 */
@@ -72,11 +73,11 @@
 			var otherDrinks = [];
 			
 			/*
-			 * Sixth, I'm going to set up another for loop, but it will check to see if a drink is BOTH
+			 * 6.) I'm going to set up another for loop, but it will check to see if a drink is BOTH
 			 * black AND has caffeine. If it has both, it'll go to the blackCaffeine list; otherwise,
 			 * it's off to the otherDrinks list.
 			 */
-			for(var i=0;i<4;i++){
+			for(var i=0;i<drinkList.length;i++){
 				var currentDrink = drinkList[i];
 				console.log("Drink",i+1,currentDrink);
 		
@@ -90,7 +91,7 @@
 			}//end for
 			
 			/*
-			 * Seventh, I'm going to find out if the computer has properly sorted my drinks!
+			 * 7.) I'm going to find out if the computer has properly sorted my drinks!
 			 */
 			console.log(" ");//just some space for aesthetics
 			console.log("The mystery drink is",blackCaffeine);
@@ -98,7 +99,7 @@
 			console.log(" ");//space
 			
 			/*
-			 * Eighth, I'm going to check to see if the computer still knows about my original drink lists.
+			 * 8.) I'm going to check to see if the computer still knows about my original drink lists.
 			 */
 			console.log("The black drinks are still",blackDrinks);
 			console.log("The colorful drinks are still",colorDrinks);
