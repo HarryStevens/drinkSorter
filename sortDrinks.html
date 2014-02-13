@@ -43,8 +43,8 @@
 			 * to see if it's black. If it is, it'll put it into blackDrinks. Otherwise, it'll
 			 * put it into colorDrinks.
 			 */
-			var currentDrink = drinkList[i];
 			for(var i=0;i<4;i++){
+				var currentDrink = drinkList[i];
 				console.log("Drink",i+1,drinkList[i]);//listing the drinks
 				
 				if(currentDrink.color == "black"){
@@ -59,9 +59,10 @@
 			/*
 			 * Fourth, I'll console log blackDrinks and colorDrinks to see if it sorted properly.
 			 */
+			console.log(" ");//space to see better in browser console.
 			console.log("The black drinks are",blackDrinks);
 			console.log("The colorful drinks are",colorDrinks);
-			
+			console.log(" ");//space to see better in browser console.
 			/*
 			 * Fifth, I want to see if I can single out only the drink that is black and has caffeine.
 			 * To do this, I'm going to make two more empty lists, one called blackCaffeine, the other
@@ -76,8 +77,13 @@
 			 * it's off to the otherDrinks list.
 			 */
 			for(var i=0;i<4;i++){
-				if(currentDrink.color == 'black'){
-					console.log("This is a black drink.");
+				var currentDrink = drinkList[i];
+				console.log("Drink",i+1,currentDrink);
+		
+				if(currentDrink.color == 'black',currentDrink.caffeine == true){
+					console.log("This is coffee.");// testing to see if the comp knows it's coffee
+				}else{
+					console.log("Not coffee.");
 				}
 			}
 		</script>
