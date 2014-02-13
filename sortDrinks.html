@@ -61,6 +61,25 @@
 			 */
 			console.log("The black drinks are",blackDrinks);
 			console.log("The colorful drinks are",colorDrinks);
+			
+			/*
+			 * Fifth, I want to see if I can single out only the drink that is black and has caffeine.
+			 * To do this, I'm going to make two more empty lists, one called blackCaffeine, the other
+			 * called otherDrinks.
+			 */
+			var blackCaffeine = [];
+			var otherDrinks = [];
+			
+			/*
+			 * Sixth, I'm going to set up another for loop, but it will check to see if a drink is BOTH
+			 * black AND has caffeine. If it has both, it'll go to the blackCaffeine list; otherwise,
+			 * it's off to the otherDrinks list.
+			 */
+			for(var i=0;i<4;i++){
+				if(currentDrink.color == 'black'){
+					console.log("This is a black drink.");
+				}
+			}
 		</script>
 	</body>
 </html>
