@@ -38,7 +38,8 @@
 			var blackDrinks = [];
 			var colorDrinks = [];
 			
-			/*Third, I'm going to create a for loop. It will check each drink in the drinkList
+			/*
+			 * Third, I'm going to create a for loop. It will check each drink in the drinkList
 			 * to see if it's black. If it is, it'll put it into blackDrinks. Otherwise, it'll
 			 * put it into colorDrinks.
 			 */
@@ -48,11 +49,18 @@
 				
 				if(currentDrink.color == "black"){
 					console.log("This is a BLACK drink!");//testing to see if it knows it's black
-					
+					blackDrinks.push(currentDrink);//put it in the blackDrinks list
 				}else{
 					console.log("This is a COLOR drink!");//testing to see if it knows it's not black
+					colorDrinks.push(currentDrink);//put it in the colorDrinks list
 				}//end if
 			}//end for
+			
+			/*
+			 * Fourth, I'll console log blackDrinks and colorDrinks to see if it sorted properly.
+			 */
+			console.log("The black drinks are",blackDrinks);
+			console.log("The colorful drinks are",colorDrinks);
 		</script>
 	</body>
 </html>
