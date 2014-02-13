@@ -44,8 +44,15 @@
 			 */
 			for(var i=0;i<4;i++){
 				var currentDrink = drinkList[i];
-				console.log(drinkList[i]);
-			}
+				console.log("Drink",i+1,drinkList[i]);//listing the drinks
+				
+				if(currentDrink.color == "black"){
+					console.log("This is a BLACK drink!");//testing to see if it knows it's black
+					
+				}else{
+					console.log("This is a COLOR drink!");//testing to see if it knows it's not black
+				}//end if
+			}//end for
 		</script>
 	</body>
 </html>
