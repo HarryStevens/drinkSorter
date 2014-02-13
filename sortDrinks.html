@@ -43,8 +43,8 @@
 			 * to see if it's black. If it is, it'll put it into blackDrinks. Otherwise, it'll
 			 * put it into colorDrinks.
 			 */
+			var currentDrink = drinkList[i];
 			for(var i=0;i<4;i++){
-				var currentDrink = drinkList[i];
 				console.log("Drink",i+1,drinkList[i]);//listing the drinks
 				
 				if(currentDrink.color == "black"){
