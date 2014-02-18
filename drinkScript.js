@@ -1,4 +1,4 @@
-/**
+ /**
  * @author Harry Stevens
  */
 /*
@@ -18,8 +18,8 @@
 				"caffeine":true,
 				"color":"black"},
 				
-				{"name":"fruit punch",
-				"caffeine":false,
+				{"name":"red bull",
+				"caffeine":true,
 				"color":"red"}
 			];
 			
@@ -73,7 +73,7 @@
 				var currentDrink = drinkList[i];
 				console.log("Drink",i+1,currentDrink);
 		
-				if(currentDrink.color == 'black',currentDrink.caffeine == true){
+				if(currentDrink.color == 'black' && currentDrink.caffeine == true){
 					console.log("This is coffee.");//testing to see if the comp knows it's coffee
 					blackCaffeine.push(currentDrink);
 				}else{
